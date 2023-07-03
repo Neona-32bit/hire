@@ -1,38 +1,483 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Overpass");
+
+* {
+	box-sizing: border-box;
+	font-family: "Overpass", sans-serif;
+}
+body{
+  font-family: 'Overpass';
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cont{
+text-align: center;
+justify-content: center;
+align-items: center;
+align-content: center;
+
+padding-top: 2rem;
+
+background-color: white;
+border: 1px solid rgb(190, 186, 186);
+background-color: rgb(249, 249, 249);
+box-shadow: 5px 5px 5px rgb(209, 207, 207);
+height: fit-content;
+padding:10vh;
+width: fit-content;
+
+}
+.cont h3{
+  font-size: 1.7rem;
+  color: rgb(21, 22, 26);
+  
+}
+textarea{
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+a{
+  color: white;
+  text-decoration: none;
+}
+.buttonn{padding: 1rem;
+font-size: 2.5rem;}
+button a{
+  color:white
+}
+
+p{
+  font-weight: bold;
+  word-wrap: break-word;
+  padding-top: 2rem;
+}
+
+
+.logout{
+  font-size: 1.5rem;
+  
+  border: none;
+  cursor: pointer;
+  
+  border-radius: 5px;
+ 
+}
+
+/**************************Navbar*******************************/
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  align-items: center;
+  
+  padding: 1rem 0;
+  margin-bottom: 0rem;
+}
+.navbar button{
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(21, 22, 26);
+  color: white;
+}
+a{
+  color: rgb(21, 22, 26);
+}
+.navbar ul{
+  display: flex;
+  list-style: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+li{
+  padding-right: 1rem;
+  font-size: 1.3rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+}
+.brand{
+font-size: 3rem;
+padding: 0;
+margin: 0;
+color: rgb(21, 22, 26);
+}
+li a:hover{
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: black;
+}
+h2{
+  font-size: 5.5rem;
+  font-weight: lighter;
+  color: rgb(21, 22, 26);
+  transform: scale3d(1, 1, 1);
+  
+}
+.main-ban{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+  justify-content: space-between;
+  margin-top: 0rem;
+  justify-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.main-ban button{
+  background-color: white;
+  color: rgb(21, 22, 26);
+  border-radius: 10px;
+  width: 300px;
+  height: fit-content;
+  font-size: 2rem;
+  border: 3px solid rgb(21, 22, 26);
+  outline: none;
+  padding: 1rem 2rem;
+  margin-top: 0rem;
+  cursor: pointer;
+}
+.user-img{
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 50%;
+  margin-left: 1rem;
+  overflow: hidden;
+}
+.user-cont{
+  display: flex;
+}
+.user-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ban button:hover{
+  background-color: rgb(21, 22, 26);
+  color: white;
+}
+.main-ban h2:hover{
+  
+  cursor: pointer;
+  animation: rubberBand ease-in-out 1s forwards;
+  
+}
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+    font-weight: bolder;
   }
+
+  100% {
+    transform: scale3d(1.1, 1, 1);
+    font-weight: bolder;
+    
+    
+  }
+
+ 
+  
+}
+/*What we offer*/
+.offer-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.offer{
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+  margin-bottom: 20vh;
+}
+.of-h{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  padding: 3rem 5rem;
+ 
+}
+.of-b p{
+  word-wrap: break-word;
+ font-size: 1.4rem;
+ font-weight: lighter;
+
+}
+.of-b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37,52,72);
+  color: white;
+  width: 50%;
+  padding: 3rem 5rem;
+}
+.of-h h3{
+  font-weight: bolder;
+}
+.offer-cont h2{
+  margin-bottom: 4rem;
+}
+.ser-b,.ser-h{
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  justify-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ser-h h3{
+  font-size: 3.5rem;
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+
+}
+.ser-h ul{
+  list-style: numbers;
+  margin-top: 1rem;
+  width: 100%;
+}
+.ser-h li{
+  margin-top: 1rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+.service-cont{
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.ser-h{
+  padding-top: 10%;
+}
+.ser-b p{
+  width: 90%;
+}
+.test-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(190, 205, 222);;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+
+.test{
+  display: flex;
+  justify-content: space-around;
+}
+.tcard{
+  width: 45%;
+  background-color: white;
+  padding: 3rem 5rem;
+  border-radius: 20px;
+}
+
+.tcard p{
+  font-size: 1.5rem;
+  height: 50vh;
+  font-weight: lighter;
+  font-style: italic;
+}
+.tcard h4{
+  font-weight: bolder;
+}
+.test-cont h2{
+  justify-self: flex-start;
+  align-self: flex-start;
+  padding-left: 5%;
+  font-weight: bolder;
+  
+}
+.foot{
+  width: 90%;
+  margin: auto;
+  height: 60vh;
+  margin-bottom: 10vh;
+}
+.foot1,.foot2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 5vw;
+  
+}
+.foot1{
+  height: 20vh;
+  background-color: rgb(21, 22, 26);
+  color: white;
+ 
+}
+
+.foot2{
+  height: 40vh;
+  background-color: rgb(190, 205, 222);
+  color: rgb(21, 22, 26);
+}
+.foot1 h2{
+  font-size: 3rem;
+  color: white;
+}
+.foot1 i{
+  color: white;
+  font-size: 2.5rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+.foot2 h3{
+  font-size: 2rem;
+}
+.foot2 ul{
+  list-style: none;
+}
+.foot2 li{
+  padding-bottom: 0.1rem;
+  margin-bottom: 0.7rem;
+}
+.foot2 li:hover{
+  border-bottom: 3px solid rgb(21, 22, 26);
+  cursor: pointer;
+}
+.foot1 button{
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+background-color: rgb(190, 205, 222);
+color: rgb(21, 22, 26);
+  font-weight: bolder;
+}
+/*Search*/
+.search-h{
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(249, 249, 249);
+  color: rgb(21, 22, 26);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 2rem;
+  border: rgb(190, 186, 186) 0px solid;
+  box-shadow: 5px 5px 5px rgb(209, 207, 207);
+}
+.search-h h2{
+
+  padding-bottom: 2rem;
+  margin: 0;
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+}
+.search-h input,select{
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+.results-cont{
+  width: 90%;
+  margin: auto;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.cand-cont{
+  background-color: rgb(249, 249, 249);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgb(190, 205, 222);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-items: flex-start;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+.cand-c1{
+  display: flex;
+  justify-content: space-around;
+}
+.cand-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: contain;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+.cand-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+.cand-c1 span{
+  margin-right: 0.5rem;
+  
+}
+.cand-name{
+  margin-right: 2rem;
+}
+.cand-c2{
+  display: flex;
+  justify-content: flex-start;
+}
+.cand-cont span{
+  font-weight: bolder;
+}
+.cand-cont p{
+  word-wrap: break-word;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+ .cand-cont h4{
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+/*Join*/
+.join-cont{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.join-cont .cont{
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ color: rgb(21, 22, 26);
+ background-color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cont{
+  margin-top: 10vh;
 }
