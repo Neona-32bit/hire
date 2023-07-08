@@ -4,7 +4,6 @@ import TextField from '@mui/material/TextField';
 import Button from './Button.js'
 import '../../App.css';
 import NavBar from './Navbar.js';
-import img from './imgs/graphics.svg'
 export default function BasicTextFields(props) {
     return (
     <div>
@@ -33,7 +32,7 @@ export default function BasicTextFields(props) {
              </Box>
              <Button title={props.title} handleAction={props.handleAction} 
               style={{
-                backgroundColor: 'rgb(254,70,70)',
+                backgroundColor: 'rgb(21, 22, 26)',
                 fontSize: "18px",
                 margin: "0px",
                 alignItems: "center",
