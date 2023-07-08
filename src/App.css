@@ -536,6 +536,8 @@ color: rgb(21, 22, 26);
 	opacity: 0;
 	font-size: 1.8rem;
   position: absolute;
+  top: 5vh;
+  right: 5vh;
 }
 body{
   overflow-x: hidden;
