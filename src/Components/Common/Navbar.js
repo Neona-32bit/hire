@@ -2,7 +2,16 @@ import { useNavigate,Link } from 'react-router-dom'
 import { getAuth, signOut } from 'firebase/auth'
 import { app,auth } from '../../firebase-config';
 import { useState } from 'react';
+import { useRef } from "react";
+
 export default function NavBar(){
+    const navRef = useRef();
+
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
     let navigate = useNavigate();
     var auth = getAuth();
     var cur_user = auth.currentUser;
@@ -28,7 +37,7 @@ var cur_user = auth.currentUser;
     
     <div className='navbar'>
         <h1 className='brand'>HIRE</h1>
-        <div className='nav-el'>
+        <nav className='nav-el' ref={navRef}>
             <ul>
                     <li>
                         <a href='#'><Link to="/">Home</Link></a>
@@ -61,13 +70,24 @@ var cur_user = auth.currentUser;
                            </div>
                         </div>
                         :
-                        <button> <Link to="/join">Join Us</Link></button>
+                        <button id='join'> <Link to="/join">Join Us</Link></button>
                         }
                    
                     
-                       
+                   <button
+					className="nav-btn nav-close-btn"
+                    id='close'
+					onClick={showNavbar}>
+					<i class="fa-solid fa-xmark"></i>
+				</button>
                 </ul>
-        </div>
+        </nav>
+        <button
+				className="nav-btn"
+                id='bars'
+				onClick={showNavbar}>
+				<i class="fa-solid fa-bars-staggered"></i>
+			</button>
     </div>
              
             

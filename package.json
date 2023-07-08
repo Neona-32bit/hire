@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.23.0",
+    "homepage": "https://github.com/Neona-32bit/hire",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -18,13 +19,13 @@
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.3",
-    "web-vitals": "^2.1.4",
-    "homepage":"https://github.com/Neona-32bit/hire"
+    "styled-jsx": "^5.1.2",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

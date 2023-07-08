@@ -4,13 +4,13 @@ import TextField from '@mui/material/TextField';
 import Button from './Button.js'
 import '../../App.css';
 import NavBar from './Navbar.js';
-
+import img from './imgs/graphics.svg'
 export default function BasicTextFields(props) {
     return (
     <div>
         <NavBar />
         <div className='join-cont'>
-            
+                
                 <div className='cont'>
                     <div className='heading-container'>
                         <h1 id='form-title'>

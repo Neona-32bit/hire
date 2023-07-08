@@ -8,7 +8,23 @@ body{
   font-family: 'Overpass';
   font-family: 'Poppins', sans-serif;
 }
-
+.join-cont{
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  justify-items: flex-end;
+  height: fit-content;
+  width: fit-content;
+}
+.form-sec{
+  width: 30%;
+ 
+  margin-right: 2rem;
+}
+.form-sec img{
+  height: 500px;
+  object-fit: contain;
+}
 .cont{
 text-align: center;
 justify-content: center;
@@ -24,6 +40,7 @@ box-shadow: 5px 5px 5px rgb(209, 207, 207);
 height: fit-content;
 padding:10vh;
 width: fit-content;
+background-color: rgb(6,78,137);
 
 }
 .cont h3{
@@ -83,6 +100,7 @@ p{
   padding: 0.5rem 1rem;
   background-color: rgb(21, 22, 26);
   color: white;
+  outline: none;
 }
 a{
   color: rgb(21, 22, 26);
@@ -113,22 +131,23 @@ li a:hover{
   color: black;
 }
 h2{
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-weight: lighter;
   color: rgb(21, 22, 26);
   transform: scale3d(1, 1, 1);
   
 }
+.main-ban h2{
+  font-size: 5.5rem;
+}
 .main-ban{
   display: flex;
-  width: 90%;
+  width: 95%;
   margin: auto;
   height: 80vh;
   justify-content: space-between;
   margin-top: 0rem;
-  justify-items: center;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 .main-ban button{
   background-color: white;
@@ -200,6 +219,7 @@ h2{
   width: 100%;
   justify-content:space-between;
   margin-bottom: 20vh;
+  flex-wrap: wrap;
 }
 .of-h{
   display: flex;
@@ -287,6 +307,7 @@ h2{
 .test{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .tcard{
   width: 45%;
@@ -380,20 +401,43 @@ color: rgb(21, 22, 26);
   align-items: center;
   justify-items: center;
   padding: 2rem;
-  border: rgb(190, 186, 186) 0px solid;
-  box-shadow: 5px 5px 5px rgb(209, 207, 207);
+ 
+  height: 40vh;
+  position: relative;
+}
+.search-h img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.dark{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .search-h h2{
 
   padding-bottom: 2rem;
   margin: 0;
   font-size: 3.5rem;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+  z-index: 3;
+  color: white;
 }
 .search-h input,select{
   margin-right: 2rem;
   font-size: 1.2rem;
   padding: 0.3rem;
+  z-index: 5;
+  position: relative;
 }
 .results-cont{
   width: 90%;
@@ -404,18 +448,17 @@ color: rgb(21, 22, 26);
   flex-wrap: wrap;
 }
 .cand-cont{
-  background-color: rgb(249, 249, 249);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 2rem;
-  border: 1px solid rgb(190, 205, 222);
+  border: 1px solid rgb(209, 216, 224);
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   justify-items: flex-start;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
 }
 .cand-c1{
   display: flex;
@@ -481,3 +524,331 @@ color: rgb(21, 22, 26);
 .cont{
   margin-top: 10vh;
 }
+
+.nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: blue;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+  position: absolute;
+}
+body{
+  overflow-x: hidden;
+}
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  background: url('Components/Common/imgs/f\ \(1\).jpg') no-repeat center center fixed;
+ 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+color: white;
+position: relative;
+  
+}
+.foot-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 5vh;
+  position: relative;
+  
+  z-index: 10;
+}
+.foot-sec p{
+  padding: 2rem 0;
+}
+.foot-sec i{
+  margin-right: 0.5rem;
+}
+.foot-sec .icons i{
+  font-size: 1.5rem;
+  
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.foot-sec span{
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.foot-sec h3{
+  margin-bottom: 1rem;
+}
+.footer .dark{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width: 1280px) {
+  .main-ban{
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    justify-content: center;
+  }
+  .main-ban h2{
+    text-align: center;
+  }
+  .ban-tex{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    border: 1px red solid;
+  }
+  .offer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .of-h{
+    width: 100%;
+
+  }
+  .of-b{
+    width: 100%;
+  }
+  #inverse{
+    flex-direction: column-reverse !important;
+  }
+  .test-cont{
+    height: fit-content;
+  }
+  .tcard p{
+    height: fit-content;
+    
+  }
+  .test{
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+  }
+  .tcard{
+    width: 100%;
+    margin-bottom: 5vh;
+    height: fit-content;
+  }
+  .foot{height: fit-content;}
+  .foot1,.foot2{
+    flex-direction: column;
+    margin-bottom: 5vh;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    width: 100%;
+  }
+  .foot1 i{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  body{
+    overflow-x:hidden ;
+  }
+  .search-h{
+    height: fit-content;
+    padding: 5vh 0;
+    width: 100%;
+    margin-right: 0;
+
+  }
+  .cand-cont{
+    width: 100%;
+  }
+  /*****************************************/
+   .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	 nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		transition: 1s;
+    background-color: rgb(21, 22, 26);
+    z-index: 100;
+    font-size: 3rem;
+	}
+  nav ul{
+    flex-direction: column;
+    color: white;
+  }
+  nav li{
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+  .navbar button{
+    background-color: white;
+    color: rgb(21, 22, 26);
+
+  }
+  #close{
+    background-color: transparent;
+    color: white;
+    font-size: 4rem;
+  }
+  #bars{
+    color: rgb(21, 22, 26);
+    font-size: 3rem;
+  }
+  .navbar{
+    padding-top: 2rem;
+  }
+  #join a{
+    color: rgb(21, 22, 26);
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  nav a{
+    color: white;
+  }
+
+ .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+  .footer{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    height: auto;
+  }
+ 
+  .foot-sec h3{
+    font-size: 1.5rem;
+  }
+  .foot-sec #logo{
+    font-size: 2rem;
+  }
+  .footer span{
+    font-size: 1.3rem;
+
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+  .tcard{
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  .test-cont{
+    padding: 1rem;
+  }
+  .tcard p{
+    font-size: 1rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  #main-player{
+    width: 70%;
+  }
+  .main-ban button{
+    width: 170px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .of-b{
+    padding: 1rem 2rem;
+  }
+  .ser-h h3{
+    font-size: 2rem;
+  }
+  .ser-b p{
+    width: 100%;
+  }
+  .ser-h{
+    width: 100%;
+  }
+  .of-h{
+    width: 100%;
+    padding: 1rem 2rem;
+
+  }
+  .brands-car h3{
+    text-align: center;
+  }
+  .results-cont{
+    width: 95%;
+  }
+.cand-cont{
+  padding: 2rem 0.5rem;
+}
+.search-h h2{
+  font-size: 2rem;
+}
+.search-h input,select{
+  margin-right: 1rem;
+  font-size: 0.7rem;
+
+}
+#bars{
+  font-size: 2rem;
+}
+#logo{
+  font-size: 2rem;
+}
+#close{
+  font-size: 2rem;
+}
+nav li{
+  font-size: 2rem;
+}
+#join a{
+  font-size: 2rem;
+}
+.footer{
+  height: fit-content;
+  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 10vh;
+}
+.foot-sec{
+  margin-right: 0;
+  
+  width: 100%;
+  margin-left: 10vh;
+}
+}
+
+

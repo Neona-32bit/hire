@@ -47,7 +47,7 @@ export default function Home() {
         <div>
           
             <div className='main-ban'>
-                <div>
+                <div className='ban-text'>
                 <h2>
                     Where Talent<br/> Meets <br/>Opportunity
                 </h2>
@@ -60,8 +60,10 @@ export default function Home() {
         src={animationData}
         className="player"
         loop
+        id='main-player'
+
         autoplay
-        style={{ height: '700px', width: '700px' }}
+        style={{ height: 'auto', width: '80%' }}
         speed={0.3}
 
       />
@@ -180,7 +182,7 @@ export default function Home() {
                     </div>
                     
                 </div>
-                <div className='service offer'>
+                <div className='service offer ' id='reverse'>
                     <div className='ser-h of-h'>
                         <h3>Process</h3>
                         <ul>
@@ -201,7 +203,7 @@ export default function Home() {
             className="player"
             loop
             autoplay
-            style={{ height: '300px', width: '100%' }}
+            style={{ height: '250px', width: '100%' }}
             speed={0.5}
 
             />
@@ -215,42 +217,13 @@ export default function Home() {
 
 
 
-The best way to establish and optimize your recruiting process is to run it. We provide boots-on-the-ground recruiting services, allowing you to build the plane as you fly it. Let's get candidates flowing through your pipeline!
+The best way to establish and optimize your recruiting process is to run it. 
 
                         </p>
                     </div>
                 </div>
-                <div className='service offer'>
-                <div className='ser-b of-b'>
-                    <Player
-            src={an12}
-            className="player"
-            loop
-            autoplay
-            style={{ height: '300px', width: '100%' }}
-            speed={0.5}
-
-            />
-                        <p>
-                        The best way to establish and optimize your recruiting process is to run it. We provide boots-on-the-ground recruiting services, allowing you to build the plane as you fly it. Let's get candidates flowing through your pipeline!
-                        </p>
-                    </div>
-                    <div className='ser-h of-h'>
-                        <h3>Recruiting</h3>
-                        <ul>
-                            <li>
-                            Passive and active candidate sourcing
-                            </li>
-                            <li>
-                            Highly personalized nurturing
-                            </li>
-                            <li>
-                            Initial screening
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
+                
+                
             </div>
             <div className='test-cont offer-conr'>
                 <h2>A Few Words<br/> On Us</h2>
@@ -320,7 +293,93 @@ The best way to establish and optimize your recruiting process is to run it. We 
 	</div>
 </div>
      </div>
-     <div className='foot'>
+     
+     <div class="footer">
+            <div class="foot-sec">
+                <h1 id="logo">Hire</h1>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                <div class="icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="foot-sec">
+                <h3>About</h3>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    About us
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Services
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Testimonials
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Faq
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Payments
+                </span>
+            </div>
+            <div class="foot-sec">
+                <h3>Contacts</h3>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Contact us
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Book an appointment
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Cost Calc.
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Our CEO
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    About Us
+                </span>
+            </div>
+            <div class="foot-sec">
+                <h3>Offices</h3>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Austin, TX
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Brooklyn, New York
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Washignton DC
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Brooklyn, New York
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Brooklyn, New York
+                </span>
+            </div>
+            <div class="dark"></div>
+       </div>
+        </div>
+    )
+}
+/*<div className='foot'>
       <div className='foot1'>
             <h2>DO YOU HAVE A QUESTION</h2>
             <button>Contact Us</button>
@@ -402,11 +461,7 @@ The best way to establish and optimize your recruiting process is to run it. We 
           </li>
         </ul>
       </div>
-     </div>
-        
-        </div>
-    )
-}
+     </div>*/
 
 
 

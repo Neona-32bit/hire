@@ -1,9 +1,10 @@
 import NavBar from "./Navbar"
 import c1 from './imgs/c1.jpeg'
 import searchData from './searchData'
-import { useState,useEffect } from "react"
+import { useState,useEffect } from "react";
+import banner from './imgs/h2.jpg'
+
 export default function Search(){
-    
 const [items, setItems] = useState(searchData);
 const [q, setQ] = useState("");
        
@@ -63,7 +64,9 @@ const [q, setQ] = useState("");
     return(
         <div>
             <NavBar />
-            <div className="search-h">
+            <div className="search-h ">
+                <div className="dark"></div>
+                <img src={banner} />
                 <h2>Hire Now</h2>
                 <div className="search-el">
                 <input
