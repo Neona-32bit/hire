@@ -294,88 +294,7 @@ The best way to establish and optimize your recruiting process is to run it.
 </div>
      </div>
      
-     <div class="footer">
-            <div class="foot-sec">
-                <h1 id="logo">Hire</h1>
-                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <div class="icons">
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                </div>
-            </div>
-            <div class="foot-sec">
-                <h3>About</h3>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    About us
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Services
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Testimonials
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Faq
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Payments
-                </span>
-            </div>
-            <div class="foot-sec">
-                <h3>Contacts</h3>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Contact us
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Book an appointment
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Cost Calc.
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Our CEO
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    About Us
-                </span>
-            </div>
-            <div class="foot-sec">
-                <h3>Offices</h3>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Austin, TX
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Brooklyn, New York
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Washignton DC
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Brooklyn, New York
-                </span>
-                <span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Brooklyn, New York
-                </span>
-            </div>
-            <div class="dark"></div>
-       </div>
+     
         </div>
     )
 }
@@ -461,7 +380,89 @@ The best way to establish and optimize your recruiting process is to run it.
           </li>
         </ul>
       </div>
-     </div>*/
+     </div>
+     <div class="footer">
+            <div class="foot-sec">
+                <h1 id="logo">Hire</h1>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                <div class="icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="foot-sec">
+                <h3>About</h3>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    About us
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Services
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Testimonials
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Faq
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Payments
+                </span>
+            </div>
+            <div class="foot-sec">
+                <h3>Contacts</h3>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Contact us
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Book an appointment
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Cost Calc.
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Our CEO
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    About Us
+                </span>
+            </div>
+            <div class="foot-sec">
+                <h3>Offices</h3>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Austin, TX
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Brooklyn, New York
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Washignton DC
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Brooklyn, New York
+                </span>
+                <span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Brooklyn, New York
+                </span>
+            </div>
+            <div class="dark"></div>
+       </div>*/
 
 
 
