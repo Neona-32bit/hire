@@ -51,6 +51,6 @@ Welcome to the Hiring Agency React App! This application is designed to streamli
     npm start
     ```
 
-The app should now be running locally on [http://localhost:3000](http://localhost:3000).
+The app should now be running locally on [http://localhost:3000](http://localhost:3000)
 
-## [Website Live Demo](https://hire-nine.vercel.app/).
+## [Website Live Demo](https://hire-nine.vercel.app/)
